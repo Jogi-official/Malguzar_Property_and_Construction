@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malgulzar Property & Construction</title>
-
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <rect width='100' height='100' fill='%23f97316'/>
+  <text x='50%' y='55%' font-size='50' text-anchor='middle' fill='white' font-family='Arial' dy='.3em'>MG</text>
+</svg>"
+    />
     <!-- Tailwind CDN -->
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,6 +20,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body class="bg-gray-50 text-gray-800">
@@ -62,12 +75,24 @@
 
           <!-- Buttons -->
           <div class="flex flex-wrap gap-4">
-            <a
-              href="https://wa.me/919027168414"
-              class="bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-gray-800 transition"
-            >
-              📞 Get in Touch
-            </a>
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <!-- Explore Button -->
+              <a
+                href="#featured-properties"
+                class="bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-orange-600 transition"
+              >
+                🏡 Explore Properties
+              </a>
+
+              <!-- WhatsApp Button -->
+              <a
+                href="https://wa.me/919027168414"
+                class="bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-gray-800 transition"
+              >
+                📞 Get in Touch
+              </a>
+            </div>
           </div>
         </div>
         <!-- need lateer -->
@@ -92,81 +117,169 @@
     </section>
 
     <!-- 🧑 ABOUT SECTION -->
-    <section class="py-12">
-      <div class="max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-2xl font-bold mb-4">About Us</h2>
-        <p class="text-gray-600 leading-relaxed">
-          We deal in verified land and provide end-to-end construction services.
-          Our focus is on honest pricing, trusted deals, and helping you find
-          the perfect property near prime locations.
-        </p>
-      </div>
-    </section>
-
-    <!-- 🏡 PROPERTY SECTION -->
-    <section class="py-12 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-2xl font-bold text-center mb-8">Featured Property</h2>
-
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <!-- Image -->
+    <section class="py-16 bg-gray-50">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Image -->
+        <div>
           <img
-            src="https://via.placeholder.com/500"
-            class="rounded-2xl shadow-md"
+            src="Images/about us.png"
+            class="rounded-3xl shadow-lg overflow-hidden"
           />
+        </div>
 
-          <!-- Details -->
-          <div>
-            <h3 class="text-xl font-semibold mb-3">Plot Near ISBT Dehradun</h3>
+        <!-- Content -->
+        <div>
+          <p class="text-orange-500 font-semibold mb-2">Who We Are</p>
 
-            <p class="text-orange-600 font-bold text-lg mb-3">
-              ₹30,000 / Gaz (Negotiable)
-            </p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            About <span class="text-orange-500">Malgulzar Realty</span>
+          </h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            We specialize in verified land deals and reliable construction
+            services in Dehradun. Our goal is to help you buy, sell, and build
+            with complete trust and transparency.
+          </p>
 
-            <ul class="text-gray-600 space-y-2 mb-4">
-              <li>✔ Only 3 km from ISBT</li>
-              <li>✔ Near Graphic Era & Hospital</li>
-              <li>✔ Good road connectivity</li>
-            </ul>
+          <!-- Highlights -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-xl shadow">
+              <p class="text-orange-500 font-bold text-lg">100+</p>
+              <p class="text-sm text-gray-500">Happy Customers</p>
+            </div>
 
-            <a
-              href="https://wa.me/919027168414"
-              class="inline-block bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600"
-            >
-              Enquire Now
-            </a>
+            <div class="bg-white p-4 rounded-xl shadow">
+              <p class="text-orange-500 font-bold text-lg">50+</p>
+              <p class="text-sm text-gray-500">Verified Properties</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow">
+              <p class="text-orange-500 font-bold text-lg">3+</p>
+              <p class="text-sm text-gray-500">Years Experience</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow">
+              <p class="text-orange-500 font-bold text-lg">100%</p>
+              <p class="text-sm text-gray-500">Clear Documents</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- 🏗 SERVICES -->
-    <section class="py-12">
+    <section class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-2xl font-bold text-center mb-8">Our Services</h2>
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <p class="text-orange-500 font-semibold mb-2">What We Offer</p>
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Our <span class="text-orange-500">Services</span>
+          </h2>
+          <p class="text-gray-500 mt-3 text-sm">
+            Helping you buy, sell, and build with complete trust.
+          </p>
+        </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow text-center">
+        <!-- Cards -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center group"
+          >
+            <!-- Circle Image -->
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow border-4 border-orange-100"
+            >
+              <img
+                src="Images/Services/land.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
             <h3 class="font-semibold text-lg mb-2">Land Buying & Selling</h3>
+
             <p class="text-gray-500 text-sm">
-              Verified plots with clear documentation.
+              Verified plots with clear documentation and best deals in
+              Dehradun.
             </p>
           </div>
 
-          <div class="bg-white p-6 rounded-xl shadow text-center">
+          <!-- Service 2 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center group"
+          >
+            <!-- Circle Image -->
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow border-4 border-orange-100"
+            >
+              <img
+                src="Images/Services/const.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
             <h3 class="font-semibold text-lg mb-2">Construction Services</h3>
+
             <p class="text-gray-500 text-sm">
-              From planning to final build, we handle everything.
+              Complete construction solutions from planning to final build.
             </p>
           </div>
 
-          <div class="bg-white p-6 rounded-xl shadow text-center">
+          <!-- Service 3 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center group"
+          >
+            <!-- Circle Image -->
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden shadow border-4 border-orange-100"
+            >
+              <img
+                src="Images/Services/constl.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
+            </div>
+
             <h3 class="font-semibold text-lg mb-2">Property Consultation</h3>
+
             <p class="text-gray-500 text-sm">
-              Expert advice for smart investment decisions.
+              Expert advice to help you make the right investment decisions.
             </p>
           </div>
         </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <a
+            href="https://wa.me/919027168414"
+            target="_blank"
+            class="bg-orange-500 text-white px-8 py-3 rounded-xl font-semibold shadow hover:bg-orange-600 transition"
+          >
+            📞 Talk to an Expert
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🏡 FEATURED PROPERTY -->
+    <section id="featured-properties" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Featured <span class="text-orange-500">Properties</span>
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Verified plots near prime locations in Dehradun.
+          </p>
+        </div>
+
+        <!-- GRID -->
+        <div
+          id="property-list"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        ></div>
       </div>
     </section>
 
@@ -190,4 +303,120 @@
       © 2026 Malgulzar Property & Construction | All Rights Reserved
     </footer>
   </body>
+  <script>
+    const properties = [
+      {
+        title: "Plot Near ISBT Dehradun",
+        location: "Near ISBT",
+        price: "₹30,000 / Gaz",
+        image: "Images/property/kailashpur.png",
+        map: "https://www.google.com/maps?q=30.298049,77.983818",
+        reel: "https://www.instagram.com/reel/DXD9Y1Qj6yH/",
+        features: [
+          "Only 3 km from ISBT",
+          "Near Graphic Era & Hospital",
+          "Good road connectivity",
+          "Clear Title & Verified Land",
+        ],
+      },
+      {
+        title: "3 Home Arcdia Grant",
+        location: "Near Premnagar",
+        price: "Contact for Price",
+        image: "Images/property/home3.png",
+        reel: "https://www.instagram.com/reel/DXobxBkj3Hq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        features: [
+          "Only 1 km from Premnagar",
+          "Near Badowala & FRI",
+          "Good road connectivity",
+          "Personal Space for Parking",
+        ],
+      },
+      {
+        title: "Plot near Premnagar",
+        location: "Ambiwala",
+        price: "₹18,000 / Gaz",
+        image: "Images/property/Ambiwala.png",
+        reel: "https://www.instagram.com/reel/DXJe6J8D1Ki/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        features: [
+          "Near Ponta-Dehradun Highway",
+          "2 min from Delhi-Dehradun Highway",
+          "Nearby Premnagar & Badowala",
+          "Near Jhajra",
+        ],
+      },
+      {
+        title: "Plot Near ISBT Dehradun",
+        location: "Doon Enclave",
+        price: "₹63,000 / Gaz",
+        image: "Images/property/doonEnclave.png",
+        reel: "https://www.instagram.com/reel/DXt0pdoD4fP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        features: [
+          "Just 1 km from ISBT",
+          "Near Railway Station",
+          "Close to Graphic Era",
+          "Near Indresh Hospital",
+        ],
+      },
+    ];
+
+    const propertyList = document.getElementById("property-list");
+
+    properties.forEach((property) => {
+      propertyList.innerHTML += `
+    
+    <div class="bg-gray-50 rounded-3xl overflow-hidden shadow hover:shadow-xl transition duration-300">
+
+      <!-- IMAGE -->
+      <div class="relative group">
+
+        <img src="${property.image}"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 opacity-0 
+          group-hover:opacity-100 transition flex items-center justify-center gap-3">
+
+          <a href="${property.reel}" target="_blank"
+            class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+            ▶ Video
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CONTENT -->
+      <div class="p-6">
+
+        <h3 class="text-2xl font-bold mb-2">
+          ${property.title}
+        </h3>
+
+        <p class="text-gray-500 text-sm mb-3">
+          📍 ${property.location}
+        </p>
+
+        <p class="text-orange-500 font-bold text-lg mb-4">
+          ${property.price}
+        </p>
+
+        <ul class="space-y-2 text-gray-600 text-sm mb-6">
+          ${property.features.map((f) => `<li>✔ ${f}</li>`).join("")}
+        </ul>
+
+        <a href="https://wa.me/919027168414"
+          target="_blank"
+          class="block text-center bg-orange-500 hover:bg-orange-600
+          text-white py-3 rounded-xl font-semibold transition">
+
+          Enquire Now
+
+        </a>
+
+      </div>
+    </div>
+    `;
+    });
+  </script>
 </html>
